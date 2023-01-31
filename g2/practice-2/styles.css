@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#logo-epicode {
+  width: 300px;
+  object-fit: cover;
+}
+#newsletter {
+  font-style: italic;
+}
+#fill {
+  width: 250px;
+  height: 50px;
+}
+#cta {
+  width: 100px;
+  height: 45px;
+  color: #ff09e2;
+  background-color: rgb(35, 35, 164);
+  font-size: 19px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  border-width: 1px;
+  border-radius: 8px;
+  border-style: none;
+  cursor: pointer;
+}
+#related-articles {
+  font-weight: bold;
+  font-size: 19px;
+}
+#article-title {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+#footer {
+  font-style: italic;
+  font-weight: bold;
+  color: #363434;
+}

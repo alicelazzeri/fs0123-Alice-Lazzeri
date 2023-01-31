@@ -5,12 +5,13 @@
   <meta name="description" content="Primi passi operativi per creare un modello di pagina HTML per un post. Scopri come iniziare in modo facile.">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
   <title>Sviluppo di una pagina web &#8211; Blog Epicode</title>
 </head>
 <body>
   <header>
     <div id="logo-container">
-      <img src="images/logo.svg" alt="Logo Epicode">
+      <img id="logo-epicode" src="images/logo.svg" alt="Logo Epicode">
       <p id="page-title">Epicode &#8211; Il blog dei developers</p>
     </div>
   </header>
@@ -95,43 +96,36 @@
     </section>
   </main>
   <aside>
-    <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter: </p>  
+    <p id="newsletter">Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</p>  
     <form>
-      <input type="email" required name="email" placeholder="Email">
-      <button type="submits">Iscriviti!</button>
+      <input id="fill" type="email" required name="email" placeholder="Email">
+      <button id="cta" type="submits">Iscriviti!</button>
     </form>
   </aside>
   <aside>
-    <p>Articoli correlati</p>
+    <p id="related-articles">Articoli correlati</p>
     <div>
       <article>
-        <a href="#" target="_blank"><p>Validare il codice HTML</p></a> 
+        <a href="#" target="_blank"><p id="article-title">Validare il codice HTML</p></a> 
         <p>Categoria: develop</p>
         <p>Data: <time>18-9-2020</time></p>
       </article>
       <article>
-        <a href="#" target="_blank"><p>Correggere la sintassi</p></a> 
+        <a href="#" target="_blank"><p id="article-title">Correggere la sintassi</p></a> 
         <p>Categoria: develop</p>
         <p>Data: <time>16-9-2020</time></p>
       </article>
       <article>
-        <a href="#" target="_blank"><p>Meno Kb nella pagina</p></a> 
+        <a href="#" target="_blank"><p id="article-title">Meno Kb nella pagina</p></a> 
         <p>Categoria: ottimizzazione</p>
         <p>Data: <time>30-9-2020</time></p>
       </article>
     </div>
   </aside>
   <footer>
-    <p>Blog Epicode &#169;2021 </p>
-    <p>Testata online di Mario Rossi, registrata con prot. n.213/2018 &#8211; via Luigi Einaudi 2 &#8211; Milano. P.IVA 00112233.</p>
+    <p id="footer">Blog Epicode &#169;2021 </p>
+    <p id="footer">Testata online di Mario Rossi, registrata con prot. n.213/2018 &#8211; via Luigi Einaudi 2 &#8211; Milano. P.IVA 00112233.</p>
     <p><a href="mailto:info@epicode.school">info@epicode.school</a></p> 
-
   </footer>
-  
-  
-  
- 
-  
-  
 </body>
 </html>
