@@ -1,3 +1,8 @@
+@font-face { /* direttiva di CSS con cui aggiungere un font personale */
+  font-family: FontPersonale;
+  src: url(../fonts/font-personale);
+}
+
 /* così modifico la dimensione assoluta di tutti i tesi del body: */
 
 /* body {
@@ -8,14 +13,21 @@
   font-size: 25px;
 }
 #t1 {
-  font-size: 1rem; /* 1.3 rem => testo più grande del 30% rispetto alla misura prestabilita in :root, e si usano solo PUNTI, non virgole */
+  font-size: 1rem; /* 1.3 rem => testo più grande del 30% rispetto 
+  alla misura prestabilita in :root, e si usano solo PUNTI, non virgole */
+  color: #000000; /* negli esadecimali i valori si suddividono in tre coppie di cifre */
 }
 #t2 {
-  font-size: 16px;
+  font-size: 16px; 
+  color: rgb(red, green, blue) /* quando la parola è seguita da parentesi tonde, 
+  al cui interno si inseriscono cifre da 0 e 255, 
+  abbiamo a che fare con una funzione. */
 }
 #parent {
   font-size: 50px;
 }
 #t3 {
   font-size: 1em; 
+  color: rgba(red, green, blue, alpha) /* rispetto ad rgb si aggiunge anche il canale alpha, 
+  che determina la trasparenza/opacità del colore ed è un valore che va da 0 a 1 */
 }
