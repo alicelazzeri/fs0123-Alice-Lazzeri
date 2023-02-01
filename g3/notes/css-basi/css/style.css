@@ -1,0 +1,21 @@
+div {
+  color: red;
+  background-color: blue;
+/* Questo è 
+un commento */
+}
+
+/* selettore {
+  proprietà/regola: valore;
+}
+*/
+
+div span {
+  color: #fff;
+}
+
+div, span {
+  border: 1px solid #000000;
+}
+
+  
