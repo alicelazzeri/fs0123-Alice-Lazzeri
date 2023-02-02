@@ -1,0 +1,76 @@
+/* stili generali */
+
+a {
+  text-decoration: none;
+}
+a, a:visited, a:active {
+  color: #000000;
+}
+
+section > span { /* > interessa solo gli span figli diretti di section, 
+  senza > interessa tutti gli span all'interno di section */
+  text-decoration: line-through;
+}
+section + small {
+  font-weight: bold;
+}
+section ~ small { /* tutti gli small dopo una section */
+  color: red;
+}
+
+/* esempio menu mobile pure css */
+
+/* input:checked { } > i due punti indicano la pseudo classe, 
+  e rappresentano uno stato diverso 
+  rispetto allo stato normale dell'elemento selezionato */
+
+
+#toggle {
+  display: none; /* nasconde un elemento, che perde altezza e larghezza */
+}
+#menu {
+  background-color: bisque;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s;
+}
+#toggle:checked + #menu {
+  height: 70px;
+}
+
+/* hover */
+
+#menu li:hover {
+  background-color: white;
+}
+
+/* tabella */
+
+table {
+  width: 100%;
+}
+table td {
+  border: 1px solid black;
+}
+
+table tr:nth-of-type(odd):not(bianca) {
+  background-color: grey;
+}
+table tr:first-child td:first-child {
+  background: black;
+  color: white;
+}
+
+/* pseudoelementi, agiscono nel DOM ma sono esterni; JavaScript non riesce a leggerli */
+
+table tr:first-child td::after {
+  content: "+";
+}
+table tr:first-child td::before {
+  content: "+";
+}
+@keyframes ruota {
+  0%{transform: rotate (0deg);}
+  50%{transform: rotate (360deg);}
+  100%{transform: rotate (0deg);}
+}
