@@ -1,0 +1,17 @@
+.quadrato {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  overflow: auto; /* proprietà che regola il modo in cui i contenuti 
+  si comportano quando sforano rispetto al contenitore. funziona con il testo, 
+  ma anche con qualsiasi elemento che esca al di fuori del contenitore */
+}
+.max{
+  max-width: 900px;
+  background-color: blue;
+  height: 10px;
+}
+/* padding */
+.padding {
+  padding: 15px;
+}
