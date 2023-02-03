@@ -1,0 +1,274 @@
+/* General CSS */
+
+body {
+  color: #393d41;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.65;
+}
+
+h1,
+h3,
+h4 {
+  color: #25a2c3;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+footer {
+  color: #c8e7f0;
+  background-color: #25a2c3;
+}
+footer h1 {
+  color: white;
+}
+footer a {
+  color: #c8e7f0;
+}
+img {
+  max-width: 100%;
+}
+
+span {
+  text-transform: uppercase;
+}
+
+/* Header */
+
+.logo-container {
+  background-color: black;
+}
+
+#logo {
+  width: 120px;
+  height: 50px;
+  object-fit: contain;
+  margin-right: 8.5em;
+  margin-left: 8.5em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.intro-container {
+  background-image: url(../images/banner.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 2.5em;
+  
+}
+#title {
+  font-size: 1.5em;
+  line-height: 1em;
+  text-align: center;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+  padding-top: 1.5em;
+}
+
+.intro-container > p {
+  font-size: 1em;
+  text-align: center;
+  margin-right: 3em;
+  margin-left: 3em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+button {
+  background-color: #f04c2f;
+  width: 150px;
+  height: 45px;
+  border-style: none;
+  border-radius: 4px;
+  margin-top: 2em;
+  margin-bottom: 2.5em;
+  margin-right: 11em;
+  margin-left: 11em;
+}
+
+.cta {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* Main */
+
+/* Section 1 */
+
+#section1 {
+  margin-bottom: 3em;
+}
+
+.feature {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+}
+
+.feature h3 {
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 0.5em;
+  margin-right: 1.8em;
+  margin-left: 1.8em;
+}
+
+.feature p {
+  font-size: 1em;
+  text-align: center;
+  margin-right: 4em;
+  margin-left: 4em;
+}
+
+.pic-container {
+  margin-right: 5em;
+  margin-left: 5em;
+}
+
+#notebook {
+  width: 250px;
+  height: 250px;
+  border-radius: 125px;
+}
+
+/* Section 2 */
+
+#section2 {
+  background-color: #d83721;
+  margin-bottom: 3em;
+}
+
+#warranty-container {
+  padding-top: 2.5em;
+  margin-bottom: 1.5em;
+}
+
+#warranty {
+  font-size: 1.5em;
+  line-height: 1em;
+  text-align: center;
+  color: white;
+}
+
+#payoff {
+  color: white;
+  font-size: 0.8em;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+}
+
+#ceo-container {
+  margin-top: 2em;
+  padding-bottom: 1.8em;
+}
+
+#name {
+  color: white;
+  text-align: center;
+}
+
+#ceo {
+  color: white;
+  text-align: center;
+  font-size: 0.5em;
+}
+
+/* Section 3 */
+
+#section3 {
+  margin-bottom: 3.5em;
+}
+
+article {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+  border-radius: 4px;
+}
+
+.article-pic-container {
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+
+}
+
+.article-pic {
+  width: 600px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.article-description {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #dee1e3;
+  border-radius: 3px;
+  margin-top: -0.5em;
+  margin-bottom: 2em;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+
+.article-description h4 {
+  font-size: 1em;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+}
+
+.article-description p {
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+/* Footer */
+
+footer {
+  padding-top: 1.5em;
+  padding-bottom: 3em;
+}
+
+footer h1 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+li {
+  text-align: center;
+  list-style-type: none;
+  font-size: 1em;
+}
+
+#line {
+  margin: 0 auto; 
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #c8e7f0;
+  width: 210px;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+#copyright {
+  text-align: center;
+  font-size: 1em;
+}
+
+
+
+
+
