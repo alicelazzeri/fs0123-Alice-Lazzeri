@@ -88,7 +88,15 @@ button {
   border-radius: 4px;
   margin-top: 2em;
   margin-bottom: 2.5em;
+}
 
+button:hover {
+  background-color: white;
+  color: #f04c2f;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #f04c2f;
+  transition: border 0.5s;
 }
 
 .cta {
@@ -98,6 +106,10 @@ button {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.cta:hover {
+  color: #f04c2f;
 }
 
 /* Main */

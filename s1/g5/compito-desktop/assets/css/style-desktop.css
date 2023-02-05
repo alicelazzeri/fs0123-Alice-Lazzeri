@@ -38,13 +38,13 @@ span {
 
 .logo-container {
   background-color: black;
+  text-align: left;
 }
 
 #logo {
   width: 120px;
   height: 50px;
   object-fit: contain;
-  margin-right: 8.5em;
   margin-left: 2em;
   margin-top: 1em;
   margin-bottom: 0.5em;
@@ -78,6 +78,10 @@ span {
   margin-bottom: 1em;
 }
 
+#button-container {
+  text-align: center;
+}
+
 button {
   background-color: #f04c2f;
   width: 150px;
@@ -86,8 +90,15 @@ button {
   border-radius: 4px;
   margin-top: 0.5em;
   margin-bottom: 10em;
-  margin-right: 48em;
-  margin-left: 48em;
+}
+
+button:hover {
+  background-color: white;
+  color: #f04c2f;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #f04c2f;
+  transition: border 0.5s;
 }
 
 .cta {
@@ -97,6 +108,11 @@ button {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
+  transition: color 0.5s;
+}
+
+.cta:hover {
+  color: #f04c2f;
 }
 
 /* Main */
@@ -109,14 +125,14 @@ button {
 }
 
 #feature-container {
-  display: inline-block;
-  align-items: right;
+  padding-left: 40em;
+  margin-top: -28em;
+  margin-bottom: 8em;
 }
 
 .feature {
   margin-top: 1em;
   margin-bottom: 1.5em;
-  
 }
 
 .feature h3 {
@@ -135,19 +151,16 @@ button {
 }
 
 .pic-container {
-  width: 400px;
   margin-top: 5em;
-  margin-right: 10em;
+  margin-bottom: 3em;
   margin-left: 10em;
   display: inline-block;
-  vertical-align: middle;
 }
 
 #notebook {
-  width: 400px;
-  height: 400px;
-  border-radius: 200px;
-  display: inline-block;
+  width: 500px;
+  height: 500px;
+  border-radius: 250px;
 }
 
 /* Section 2 */
@@ -199,7 +212,7 @@ em {
 #ceo {
   color: white;
   text-align: center;
-  font-size: 0.5em;
+  font-size: 0.7em;
 }
 
 /* Section 3 */
