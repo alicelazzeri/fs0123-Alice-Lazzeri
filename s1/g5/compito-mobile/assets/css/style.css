@@ -38,14 +38,13 @@ span {
 
 .logo-container {
   background-color: black;
+  text-align: center;
 }
 
 #logo {
   width: 120px;
   height: 50px;
   object-fit: contain;
-  margin-right: 8.5em;
-  margin-left: 8.5em;
   margin-top: 1em;
   margin-bottom: 0.5em;
 }
@@ -77,6 +76,10 @@ span {
   margin-bottom: 1em;
 }
 
+#button-container {
+  text-align: center;
+}
+
 button {
   background-color: #f04c2f;
   width: 150px;
@@ -85,8 +88,7 @@ button {
   border-radius: 4px;
   margin-top: 2em;
   margin-bottom: 2.5em;
-  margin-right: 11em;
-  margin-left: 11em;
+
 }
 
 .cta {
@@ -127,8 +129,7 @@ button {
 }
 
 .pic-container {
-  margin-right: 5em;
-  margin-left: 5em;
+  text-align: center;
 }
 
 #notebook {
@@ -156,14 +157,17 @@ button {
   color: white;
 }
 
-#payoff {
+#payoff-container {
+  padding-left: 3em;
+  padding-right: 3em;
+  text-align: center;
+}
+
+em {
   color: white;
   font-size: 0.8em;
   font-weight: 300;
   font-style: italic;
-  text-align: center;
-  padding-left: 2.5em;
-  padding-right: 2.5em;
 }
 
 #ceo-container {
@@ -179,7 +183,7 @@ button {
 #ceo {
   color: white;
   text-align: center;
-  font-size: 0.5em;
+  font-size: 0.7em;
 }
 
 /* Section 3 */
@@ -194,6 +198,7 @@ article {
   margin-left: 1em;
   margin-right: 1em;
   border-radius: 4px;
+  text-align: center;
 }
 
 .article-pic-container {
