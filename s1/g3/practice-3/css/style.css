@@ -1,0 +1,106 @@
+body {
+  font-family: 'Libre Baskerville', serif;
+  color: #1d1c1c;
+}
+.blog-container {
+  margin: 0 auto;
+  width: 600px;
+}
+.logo-container {
+  text-align: center;
+  margin-bottom: 10px;
+}
+#logo {
+  width: 200px;
+  object-fit: cover;
+}
+.description{
+  text-align: center;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #d59515;
+  background-color: rgba(247, 246, 164, 0.417);
+  height: 35px;
+  width: 100%;
+}
+.body-text {
+  font-size: 10px;
+  color: #0b3f3a;
+  align-items: center;
+}
+.capslock {
+  font-weight: bold;
+}
+#title {
+  text-align: center;
+}
+#introduction-container {
+  text-align: left;
+}
+#introduction {
+  font-size: 12px;
+}
+figure {
+  text-align: left;
+}
+#focaccia {
+  border-radius: 10px;
+  max-width: 100%;
+  box-shadow: 2px 2px 10px #797777;
+}
+figcaption {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 15px;
+  color: #797777;
+}
+.features {
+  height: 30px;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color:#d59515;
+  text-align: left;
+  margin-bottom: 40px;
+  
+}
+.featured-in,
+.cranberry-recipes {
+  margin-left: 13px;
+  line-height: 10px;
+  font-size: 12px;
+}
+.featured-in {
+  color: #a62424;
+}
+.cranberry-recipes {
+  color:#0b3f3a;
+}
+section {
+  margin-top: 30px;
+}
+.section-title {
+  height: 40px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #77d9df;
+  font-size: 20px;
+}
+.item {
+  font-weight: bold;
+}
+.list {
+  line-height: 40px;
+}
+.notype {
+  list-style-type: none;
+  line-height: 20px;
+}
+.instructions .item {
+  font-size: 13px;
+}
+.instructions li {
+  font-size: 12px;
+}
+footer p {
+  font-size: 12px;
+}
