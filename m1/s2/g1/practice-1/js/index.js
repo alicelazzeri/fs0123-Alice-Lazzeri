@@ -1,2 +1,2 @@
-alert('Usa il pop up per dare dei messaggi');
-window.alert('Sto studiando JS');
+alert("Continua ad allenarti!");
+window.alert('Ma nella realtà, non su JS!');

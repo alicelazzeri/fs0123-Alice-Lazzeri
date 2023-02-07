@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Che animale sei</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 id="title"></h1>
+
+    <script src="js/naming.js"></script>
+
+    <script>
+        document.getElementById("title").innerHTML= "<b>A quale animale assomigli!</b>";
+
+        var days = prompt("Dicci quanti giorni al mese ti alleni e ti diremo che animale sei!");
+
+       console.log(days);
+
+
+            if(days >= 0 && days <= 6){
+                document.write(petPreferito);
+                document.write('<img src="img/ghiro-letargo.webp"/>');
+            }else if(days >=7 && days <= 10){
+                document.write(PetPreferito);
+                document.write('<img src="img/ippo.jpg"/>');
+            }else if(days >=11 && days <= 20){
+                document.write($pet);20
+                document.write('<img src="img/struzzo.jpg"/>');
+            }else if(days >=21 && days <= 25){
+                document.write(_pet);20
+                document.write('<img src="img/leone.jpg"/>');
+            }else{
+                document.write(_pet2);
+                document.write('<img src="img/pantera.jpg"/>');
+            }
+
+    </script>
+    <script src="js/index.js" defer></script>
+</body>
+</html>
