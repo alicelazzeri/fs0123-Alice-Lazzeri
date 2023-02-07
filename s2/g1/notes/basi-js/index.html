@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="titolo">Basi di JavaScript</h1>
+
+<!--Lo script può essere messo sia nell head che nel body, 
+  ma viene sempre messo alla fine del body 
+  per comodità e per far sì che il DOM abbia la possibilità di caricarsi per intero-->
+
+<!--Questo è uno script interno alla pagina HTML, che è la cosa migliore, 
+  ma possiamo collegare lo script anche come file esterno tipo stylesheet css-->
+  <script> 
+   document.getElementById('titolo').textContent = 'Hello World!';
+  </script>
+
+<!--Questo è il collegamento del file js esterno-->
+<!--HTML permette di aprire più tag script contemporaneamente-->
+
+  <script src="js/script.js"></script> 
+  
+</body>
+</html>
