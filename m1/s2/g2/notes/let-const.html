@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+ 
+  <script>
+    /*
+    le variabili let sono soggette al block scope: se nascono in un
+     blocco sintattico specifico (indicato tra graffe {})
+    non possono uscirne da quel blocco, a differenza delle variabili var: */
+    {
+      var a = 0; //non è soggetta a block-scope
+      console.log(a)
+    }
+    console.log (a)
+
+    {
+      let b = 1; // nasce e muore entro questo blocco 
+      console.log (b)
+    }
+    //console.log(b)Uncaught ReferenceError: b is not defined
+    console.log (b) // NON  È AMMESSO
+
+    {
+      let b = 1; // nasce e muore entro questo blocco 
+      console.log (b)
+    }
+
+    var c = 2;
+    {
+      let c = 3;
+      console.log (c) // mi riferisco alla let della riga 36
+    }
+    console.log(c) //mi riferisco alla variabile della riga 34
+
+    let a = 5;
+
+    //const > possono essere dichiarate ma mai sovrascritte, e di solito vengono rese in lettere tutte maiuscole
+    // convenzione di naming (kebab-case)
+    const NOME_DELLA_COSTANTE = 1;
+
+    //valori interni 
+    const OGGETTO = {
+      nome: 'Mario',
+      cognome: 'Rossi'
+    }
+    OGGETTO.nome = 'Marco'; 
+    
+    /*le costanti non possono essere riassegnate totalmente,
+    ma nel caso degli oggetti interni è possibile riassegnare anche le costanti */
+
+    console.log(OGGETTO.nome) //Marco
+
+    /* Per evitare la riassegnazione dei valori interni, si usa: 
+    OGGETTO.freeze = 'Marco', e così possono congelare l'oggetto 
+    ed evitare che venga modificato */
+  </script>
+  
+</body>
+</html>
