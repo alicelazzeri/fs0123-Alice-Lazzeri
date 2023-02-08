@@ -61,11 +61,25 @@
     function funzione1() {
       let a = 100;
       function funzione2() { //non posso usarla al di fuori di funzione1 perchè è definita al suo interno
-
-        console.log(a);
-
+        var x = 3;
+        console.log(a + x);
       }
+      funzione2() //x non è raggiungibile
     }
+    funzione1() //funzione 1 è raggiungibile
+
+    //variabili che contengono funzioni
+
+    let fn = function () {
+      return 'ok';
+    }
+
+    console.log(fn); // vedo il contenuto della funzione
+    console.log(fn()); // eseguo una funzione e così ne ricevo il risultato
+
+    (function() {
+      console.log('autoeseguita');
+    }) ()
 
     
     

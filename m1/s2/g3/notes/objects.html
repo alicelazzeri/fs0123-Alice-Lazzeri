@@ -17,21 +17,22 @@
     quelli che costituiscono gli array sono indici.
     l'oggetto può contenere tutto, compresi oggetti a array.
     */
+{
 
-   let objOld = new Object(); // sconsigliato, desueto
+  let objOld = new Object(); // sconsigliato, desueto
 
    let obj = {}; // linguaggio moderno
 
    let pizza = {
     gusto: 'Margherita',
     prezzo: 5,
-    mostraPrezzo: function() {
+    mostraPrezzo: function() { // metodo
       console.log(`La pizza ${this.gusto} costa ${this.prezzo} euro`)
     } //this serve per riferirsi all'elemento attuale
    }
 
    console.table(pizza)
-   document.write(pizza)
+   document.write(pizza) // non funziona perchè non è riferito ad una delle proprietà
    document.write(pizza.gusto)
 
    //lettura di una proprietà
@@ -44,9 +45,34 @@
    pizza.gusto = 'Diavola';
    console.log(pizza.gusto);
 
+   //utilizzo dei metodi
    pizza.mostraPrezzo()
 
    //mostraPrezzo() //la funzione non esiste
+
+}
+
+{
+//sistema per la costruzione di oggetti Pizza
+function Pizza () { //costruttore degli oggetti
+  this.gusto = _gusto,
+  this.prezzo = _prezzo;
+  this.mostraPrezzo = function (){
+    console.log(`La pizza ${this.gusto} costa ${this.prezzo}`)
+  }
+}
+
+let margherita = new Pizza ('Margherita', 5);
+let diavola = new Pizza ('Diavola', 1);
+
+console.log(margherita);
+console.log(diavola);
+
+margherita.mostraPrezzo()
+diavola.mostraPrezzo()
+
+}
+   
 
 
   
