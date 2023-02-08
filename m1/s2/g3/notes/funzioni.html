@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    saluto(); // posso invocare una funzione anche prima della sua definizione (hoisting)
+
+    function saluto(){
+      console.log('Ciao');
+    }
+
+    saluto(); // lancio della funzione affinché funzioni
+
+    function restituisciSaluto(){
+      //si inserisce return solo quando c'è un dato da estrapolare, altrimenti non serve
+      return 'Benvenuto'; // si utilizza solo all'interno delle funzioni, restituisce la stringa
+      // è necessario un solo return per funzione 
+      // return termina la funzione, quindi deve essere l'ultima cosa da aggiungere
+
+    }
+
+    console.log(restituisciSaluto());
+
+    let stringa = restituisciSaluto();
+    console.log(stringa);
+    
+    //scope delle funzioni
+    let a = 0;
+
+    function scope() { // scope è l'ambito in cui le variabili sono visibili e utilizzabili
+      console.log(a); // a è raggiungibile perchè globale
+      var b = 100;
+    }
+    scope();
+    //console.log(b); //Uncaught ReferenceError: b is not defined at funzioni.html:50:17
+    // la variabile var non è raggiungibile dall'esterno perchè potrebbe non nascere mai
+
+     // funzioni parametriche
+
+    function somma (a,b) { //parameters
+    console.log(a + b);
+    }
+
+    somma(2,6); //ogni volta che viene lanciata la funzione, fa la somma dei due argomenti
+    somma(5,6);
+
+    function restituisciSomma (a,b) {
+      return a + b;
+    }
+
+    console.log(restituisciSomma(3,9));
+
+    // closure, ovvero annidamento di funzioni
+
+    function funzione1() {
+      let a = 100;
+      function funzione2() { //non posso usarla al di fuori di funzione1 perchè è definita al suo interno
+
+        console.log(a);
+
+      }
+    }
+
+    
+    
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    /* gli oggetti servono per offrire la descrizione 
+    di una qualunque entità offrendo delle chiavi specifiche. 
+    negli oggetti l'assegnamento del valore avviene tramite
+    i due punti : anzichè l'uguale =.
+    gli elementi facenti parte dell'oggetto si chiamano proprietà, mentre 
+    quelli che costituiscono gli array sono indici.
+    l'oggetto può contenere tutto, compresi oggetti a array.
+    */
+
+   let objOld = new Object(); // sconsigliato, desueto
+
+   let obj = {}; // linguaggio moderno
+
+   let pizza = {
+    gusto: 'Margherita',
+    prezzo: 5,
+    mostraPrezzo: function() {
+      console.log(`La pizza ${this.gusto} costa ${this.prezzo} euro`)
+    } //this serve per riferirsi all'elemento attuale
+   }
+
+   console.table(pizza)
+   document.write(pizza)
+   document.write(pizza.gusto)
+
+   //lettura di una proprietà
+
+   console.log(pizza.gusto); //Margherita
+   console.log(pizza.prezzo)
+
+   //scrittura
+
+   pizza.gusto = 'Diavola';
+   console.log(pizza.gusto);
+
+   pizza.mostraPrezzo()
+
+   //mostraPrezzo() //la funzione non esiste
+
+
+  
+
+  </script>
+</body>
+</html>
