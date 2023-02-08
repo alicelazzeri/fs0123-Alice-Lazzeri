@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!--le variabili sono locazioni di memoria in cui è possibile salvare dati,
+  sono contenitori di dati-->
+
+  <script>
+
+    var numero = 5 //non può cominciare con un numero o un simbolo, tranne _ o $
+
+    /* var > parola chiave della variabile, 5 è l'identificativo della variabile, 
+    mentre = è l'operatore di assegnamento, poichè prende il nome della variabile e lo assegna 
+    all'identificativo */
+
+    var nomeUtente = 'Mario' // scrittura camel-case per nomi di variabili con più parole
+
+    console.log(numero, nomeUtente); // console.log può essere concatenato con più dati
+
+    numero = 8; // riassegnazione della variabile, NON riutilizzare var
+    console.log(numero);
+
+    /* js è un linguaggio debolmente tipizzato, quindi se la varibaile indica un numero 
+    non deve contenere obbligatoriatamente un numero, non è necessario dichiarare il tipo di 
+    dato per usarlo. in virtù della tipizzazione, se indico var numero = '45', js sa già che 
+    si tratta di una stringa e non di un numero e si comporta di conseguenza */
+
+    /* 
+    
+    tipi di dato:
+
+    string > identificata da apici singoli e doppi ('' "")
+    number > 5
+    boolean > true or false 
+    array > compreso entro parentesi quadre []
+    object > compreso entro parentesi graffe {}
+    
+    */ 
+
+    var a = 2;
+    var b = 3;
+    var c = a + b;
+
+    console.log(c, a + b);
+  
+    /*
+
+    operatori aritmetici:
+
+    + > somma
+    - > sottrazione
+    / > divisione
+    * > moltiplicazione
+    
+    */
+   
+    var nome = 'Mario';
+    var saluto = 'Ciao';
+
+    console.log(saluto + ' ' + nome); // il + non è usato solo per la somma, ma anche come operatore di concatenamento
+    // Ciao Mario
+
+    /* 
+    parkour - operazioni tra dati diversi/conversione tipi di dato
+    */
+
+    var num = 10;
+    var strNum = '10'; //stringa-numero > stringa
+
+    console.log(num + strNum); // 1010
+
+    /* se uno è un numero e l'altro una stringa, in js si fa una conversione del numero 
+    in stringa e viene fatto un concatenamento, se c'è una somma avviene sempre
+    un concatenamento e conversione in stringa */
+
+    console.log(num * strNum); // 100 > la stringa viene convertita in numero, dunque avremo una moltiplicazione 
+
+    console.log(num + '10a'); // 1010a NaN (Not a Number) perchè la stringa contiene anche una lettera e quindi non è possibile una somma e concatenazione
+
+    console.log(typeof num); // elabora la tipologia di dato che viene inserito a fianco
+
+    
+  </script>
+</body>
+</html>

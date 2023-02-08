@@ -11,16 +11,21 @@
   <div id="testo"></div>
 
   <script>
-    document.getElementById('testo').innerHTML = '<b>Ciao</b>'; //posso scrivere proprio HTML dentro con innerHTML
-    document.write('ciao<br>'); //sconsigliato
-    document.write('ciao<br>');//sconsigliato
+    document.getElementById('testo').innerHTML = '<b>Ciao</b>'; /* posso scrivere proprio HTML dentro con innerHTML, 
+    text.Content avrebbe interpretato solo il testo senza interpretare l'HTML*/
+
+    document.write('ciao<br>'); //anche document.write supporta HTML, ma è sconsigliato
+    document.write('ciao<br>');//sconsigliato perché il testo viene scritto al di sotto di <script>
     console.log('ciao');
     console.log(21+6);
-    console.log('%c testo colorato', 'color:red') 
+    console.log('%c Testo colorato', 'color:red') 
     /*
     %c permette di inserire una virgola dopo il primo argomento/valore
     e un secondo argomento contenente del css
     */
+
+    /* console.log serve per fare debug > 
+    controllare il codice e verificarde dove non funziona o è sbagliato */
 
   </script>
   
