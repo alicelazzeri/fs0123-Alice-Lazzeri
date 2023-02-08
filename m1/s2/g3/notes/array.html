@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <script>
+
+    /* un array è una lista di valori lunga n separati da una virgola, 
+    contraddistinto dalle parentesi quadre []. per poterlo utilizzare, 
+    deve essere salvato all'interno di una variabile poiché
+    non è una variabile di per sè */
+
+    let arrOld = new Array (); // array alla vecchia maniera, desueto
+
+    let arr = []; // può anche restare vuoto
+
+    let numeri = [1,2,3,4,5,6,7,80];
+    document.write (numeri); // viene convertito in una stringa e si tratta di una stringa in formato csv (comma-separated values)
+
+    let dati = [ // può contenere dati eterogenei, non solo numeri, ma valori tra loro correlati
+      'stringa',
+      0,
+      true,
+      {}, // un array può contenere un oggetto
+      [] //un array può contenere anche un altro array (nested)
+    ]
+
+    //lettura dei valori in un array 
+   
+
+    let pizze = ['Margherita', 'Diavola', 'Quattro Formaggi']; // [0, 1, 2]
+
+    console.log(pizze); // Array (3) con length: 3 elementi
+
+    console.log(pizze[0]); 
+    /*
+    non posso evitare di selezionare una delle pizze contenute nell'array, 
+    e per indicare la pizza che mi interessa 
+    devo indicare il numero dell'indice dell'array, che si inizia a contare da 0
+    */
+
+    let pizza2 = pizze[1];
+    console.log(pizza2);
+
+    // scrittura dei valori in un array
+
+    pizze[2] = 'Capricciosa'; // riscrittura del valore dell'indice 2, al posto di 4 formaggi c'è la capricciosa
+
+    // evitare buchi con indici che non esistono
+
+    pizze [4] = 'Marinara'; // sconsigliato per aggiungere
+    console.log(pizze); // 'Margherita', 'Diavola', 'Capricciosa', vuota, 'Marinara'
+
+    // conviene aggiungere alla fine dell'array senza creare buchi
+
+    pizze.push('Parigina', 'Mimosa'); //possiamo pushare alla fine un array di elementi
+    console.log(pizze); //il punto seguito da un dato indica un dato, e in questo caso viene aggiunto da ultimo come quinto indice
+
+    // proprietà .length, che restituisce la lunghezza attuale degli array
+
+    console.log(pizze.length);
+
+    console.log(pizze[pizze.length - 1]); //così leggo sempre l'ultimo elemento dell'array
+
+    // è in comune con le stringhe, dove .length permette di contare quanti caratteri ci sono in una parola  
+
+    console.log('ciao'.length); // è comunque sbagliato dire che le stringhe sono array di caratteri, poiché le stringhe non hanno metodi che funzionano sugli array e viceversa
+
+
+
+    // ordine alfabetico
+
+    let studenti = ['Mauro', 'Vittorio', 'Rebecca'];
+    console.log(studenti);
+
+    studenti.sort() //riordina in ordine alfabetico le stringhe, ma non per i numeri, perchè li riordinerebbe in ordine alfabetico e non cardinale
+    console.log(studenti);
+
+    studenti.reverse() //inverte l'ordine attuale, non può essere usato da solo ma deve essere sempre anticipato da .sort
+    console.log(studenti);
+
+    // riordinare i numeri
+
+    let numerati = [1, 100, 20];
+    numerati.sort(function(a,b){
+      return a - b; //ordinamento per vaore inerso return b - a;
+    })
+    console.log(numerati);
+
+    // verificare se un dato è un array, perchè typeof mostra un array solo come un oggetto
+
+    Array.isArray(studenti); 
+
+    /*se inserito nella console di Chrome (come typeof), 
+    restituisce un valore booleano se è un array, 
+    true se è un array, false se non lo è */
+
+
+  </script>
+  
+</body>
+</html>
