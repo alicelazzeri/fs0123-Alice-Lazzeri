@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //array.metodo(funzione) //funzione call back,  funzione è trasmessa a un'altra funzione come parametro
+
+    let pizze = ['Margherita', 'Diavola', 'Marinara', 'Mimosa'];
+    console.log(pizze);
+
+    //si usa quando dobbiamo effettuare una modifica ad ogni elemento dell'array
+    let pizzeDiv = pizze.map(function(valore){
+      return `<div> ${valore}</div>`
+    })
+    console.log(pizzeDiv);
+
+    pizze.forEach(function(valore) {
+
+    })
+
+    // serve a ciclare gli array
+
+    pizze.forEach(function(valore){
+      document.write(valore)
+    })
+
+    // map
+
+    let numeri = [1, 2, 3, 4, 5, 6];
+    let numerix2 = numeri.map(function(n){
+      return n * 2;
+    })
+    console.log(numerix2);
+
+    // come si faceva prima di map
+
+    /* let numeriMoltiplicati = [];
+    numeri.forEach(function(n){
+      numeriMoltiplicati.push(n * 2);
+    }) */
+
+    //filter restituisce un array con tutti i risultati trovati
+
+    let numeriFiltrati = numeri.filter(function(n) {
+      return n > 3
+    })
+    console.log(numeriFiltrati); 
+
+    //find restituisce il primo valore trovato, ma non sottoforma di array
+
+    let numeroTrovato = numeri.find(function(n) {
+      return n > 3
+    })
+
+    console.log(numeroTrovato);
+
+    //reduce 
+    numeri = [1, 2, 3, 4, 5, 6];
+    let somma = numeri.reduce(function (p, c) { // i numeri si sommano tipo sequenza di fibonacci
+      return p + c;
+    })
+    console.log(somma);
+
+
+    let numeroGrande = numeri.reduce(function (p, c) { // i numeri si sommano tipo sequenza di fibonacci
+      if(p > c) {
+        return p;
+      } else {
+        return c;
+      }
+    })
+    console.log(numeroGrande);
+  </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    let frutto = 'mango';
+    switch(frutto) { /* se è vera una condizione, esegue anche tutte le altre, 
+      mentre if si ferma anche alla prima se questa risulta vera */
+
+      case 'mela': // switch si articola con case, equivale a if/else if
+        document.write('Le mele costano 1€');
+        break; // serve per fermare l'esecuzione del case una volta trovato il risultato
+      case 'pera':
+        document.write('Le pere costano 0.90€');
+        break;
+      case 'ananas':
+      case 'mango':
+        document.write('Ananas e mango costano 3.90€');
+        break;
+      default: // equivale a else, quando nessuna delle opzioni rimaste rientra in quelle precedenti
+        document.write('Non abbiamo ' + frutto)
+
+    }
+
+    
+  </script>
+</body>
+</html>

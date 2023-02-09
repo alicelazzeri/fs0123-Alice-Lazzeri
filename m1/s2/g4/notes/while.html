@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    // i cicli servono per l'esecuzione ripetuta di un set di righe 
+
+    let i = 0;
+    while (i < 100) { //finché i è inferiore a 100
+      document.write(i); //scrivi a schermo il lvalore di i 
+      i++; //incrementa i di 1
+    } //torna alla riga 14
+
+    document.write('<br>Il ciclo ha finito le operazioni')
+
+    //esempi con break e continue
+
+    document.write('<br>');
+    
+    i = 0; // i resettata a 0
+    while(i <= 5) {
+      if(i == 2) {
+        i++;
+        continue;
+      }
+      document.write(i);
+      i++;
+    }
+
+    document.write('<br>');
+
+    i = 0; // i resettata a 0
+    while(i <= 5) {
+      if(i == 2) {
+        i++;
+        break; // quando if diventa true il ciclo ha finito
+      }
+      document.write(i);
+      i++;
+    }
+
+ 
+  </script>
+</body>
+</html>

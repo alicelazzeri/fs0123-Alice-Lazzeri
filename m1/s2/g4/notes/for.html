@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+   // questo è l'unico caso in cui si deve usare il punto e virgola dentro le parentesi tonde
+    for(let i = 0;i < 10;i++) {
+      document.write(i);
+    }
+
+    document.write ('<hr>');
+
+    //con variabile decrementata
+
+    for(let i = 9; i >= 0; i--) {
+      document.write(`<div>${i}</div>`)
+    }
+
+    document.write('<hr>');
+
+    let pizze = ['Margherita', 'Diavola', 'Marinara', 'Mimosa'];
+    for(let i = 0; i < pizze.length; i++){ // .lenght si lega alla lunghezza dell'array e mostra tutti gli elementi
+
+      document.write(`<div>${pizze[i]}</div>`);
+    }
+
+    //for of 
+    // adatto per ciclare gli array o le stringhe, essendo reiterabili
+
+    document.write('<hr>');
+
+    pizze = ['Margherita', 'Diavola', 'Marinara', 'Mimosa'];
+
+    for(let pizza of pizze) { // of esiste solo dentro for of
+      document.write(`<div>${pizza}</div>`);
+
+    }
+
+    document.write('<hr>');
+// la stringa viene spezzettata in un array, come se ogni lettera facesse parte di un array
+    for (let lettera of 'Testo') {
+      document.write(lettera + '<br>');
+
+    }
+
+    //for in 
+    // adatto per ciclare gli oggetti
+
+    let margherita = {
+      gusto: 'Margherita',
+      prezzo: 5,
+      metodo : function(){}
+    }
+
+    let campiVisualizzati = ['gusto', 'prezzo']
+
+    for (let prop in margherita) { // per ogni proprietà che trovi dentro l'oggetto margherita
+      if(campiVisualizzati.includes(prop)){
+        document.write(`<div>${prop}: ${margherita[prop]}</div>`); 
+      }
+      // margherita [prop] è il valore
+      // prop è la keyword                    
+      
+
+    } 
+
+
+
+
+  </script>
+</body>
+</html>
