@@ -18,17 +18,34 @@
     let test = document.getElementById("test");
     console.dir(test.textContent);
 
-    test.textContent = "Ciao Mondo!"
-    console.dir(test.textContent);
+    console.log(test.innerHTML); //lettura
 
-    let elementi = document.getElementsByClassName ('elemento');
-    console.log(elementi);
+    test.innerHTML = 'Ciao Mondo!'
+    test.style.color = 'red';
 
-    // elementi[0].textContent = 'ciao'
+    let elementi = document.getElementsbyClassName('elemento'); //lista di array che non può essere ciclata con forEach
 
-    for (let elemento of elementi) {
-      elemento.textContent = 'ciao';
+    let divs = document.getElementsByTagName('div'); // lista di elementi
+    console.log(divs);
+
+    divs[0].innerHTML = 'ciao'; /* si comportano come arrays 
+    e prima di identificare l'elemento che ci 
+    interessa va individuato l'indice */ 
+    for(let d of divs) {
+      d.innerHTML = 'Ciao';
+      d.style.backgroundcolor = 'yellow';
     }
+
+    /* oppure con for
+    for(let i = 0; i < divs.length; i++) {
+      d.innerHTML = 'Ciao';
+    }
+    */
+
+   // nuovi selettori 
+   let test = document.querySelector('#test'); // permette di usare i selettori di css per selezionare e restituisce un solo elemento
+   let primoElemento = document.querySelector('.elemento');//1 solo elemento
+   let tuttiElementi = document.querySelectorAll('.elemento'); // resituisce sempre un solo array
 
 
   </script>
