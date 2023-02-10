@@ -7,11 +7,13 @@
   <title>Document</title>
 </head>
 <body>
-  <button onclick="scrivi(this)">Clicca</button>
+  <button onclick="scrivi(this)">5</button>
   <script>
     function scrivi (elemento) {
   
-      console.log(elemento);
+      console.dir(elemento);
+      elemento.style.backgroundColor = 'yellow';
+      console.log(elemento.innerText);
 
     }
     scrivi ('ciao');
