@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sviluppo di una calcolatrice semplice in JS">
+  <title>La mia calcolatrice in JS</title>
+
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500&family=Orbitron&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  <div id="calculator">
+
+    <div id="screen">
+      <input id="display" type="text" placeholder="0">
+    </div>
+
+    <div id="keypad">
+
+      <div>
+        <button class="buttons" data-cancel="AC" onclick="cancelAll()">C</button>
+        <button class="buttons" data-del="del" onclick="del()">◄</button>
+        <button class="buttons" data-simbolo="." onclick="aggiungiSimbolo(this)">.</button>
+        <button class="buttons" data-simbolo="/" onclick="aggiungiSimbolo(this)">÷</button>
+      </div>
+
+      <div>
+        <button class="buttons" data-simbolo="7" onclick="aggiungiSimbolo(this)">7</button>
+        <button class="buttons" data-simbolo="8" onclick="aggiungiSimbolo(this)">8</button>
+        <button class="buttons" data-simbolo="9" onclick="aggiungiSimbolo(this)">9</button>
+        <button class="buttons" data-simbolo="*" onclick="aggiungiSimbolo(this)">x</button>
+      </div>
+
+      <div>
+        <button class="buttons" data-simbolo="4" onclick="aggiungiSimbolo(this)">4</button>
+        <button class="buttons" data-simbolo="5" onclick="aggiungiSimbolo(this), trickyNumber1(), trickyNumber2()">5</button>
+        <button class="buttons" data-simbolo="6" onclick="aggiungiSimbolo(this), trickyNumber()">6</button>
+        <button class="buttons" data-simbolo="-" onclick="aggiungiSimbolo(this)">-</button>
+      </div>
+
+      <div>
+        <button class="buttons" data-simbolo="1" onclick="aggiungiSimbolo(this)">1</button>
+        <button class="buttons" data-simbolo="2" onclick="aggiungiSimbolo(this)">2</button>
+        <button class="buttons" data-simbolo="3" onclick="aggiungiSimbolo(this)">3</button>
+        <button class="buttons" data-simbolo="+" onclick="aggiungiSimbolo(this)">+</button>
+      </div>
+
+      <div id="special-symbols">
+        <button class="buttons" data-simbolo="0" onclick="aggiungiSimbolo(this), trickyNumber3()">0</button>
+        <button class="buttons" data-simbolo="00" onclick="aggiungiSimbolo(this)">00</button>
+        <button id="total" onclick="total()">=</button>
+      </div>
+
+    </div>
+  </div>
+
+  
+
+<script src="assets/js/calculator.js"></script>
+
+</body>
+</html>
