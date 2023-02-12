@@ -1,3 +1,5 @@
+window.alert ('Ehi! Prima di cominciare a calcolare, perché non provi alcune di queste combinazioni? 376006 07738135 0771705 2020 Dai, prova!')
+
 function aggiungiSimbolo(elemento) {     
   let simbolo = elemento.getAttribute("data-simbolo");
   let display = document.querySelector ('#display');
