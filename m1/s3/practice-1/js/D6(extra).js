@@ -1,12 +1,29 @@
 // Esercizi aggiuntivi (facoltativi) per D4
 
 /* EXTRA 1
- Scrivi una funzione chiamata "checkArray" che riceve un array di numeri casuali (creati con la funzione "giveMeRandom") e per ogni elemento stampa in console
+ Scrivi una funzione chiamata "checkArray" che riceve un array di numeri 
+ casuali (creati con la funzione "giveMeRandom") e per ogni elemento stampa in console
  se il suo valore è maggiore di 5 o no.
  La funzione deve inoltre ritornare la somma di tutti i valori maggiori di 5.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+/*function checkArray(n) {
+  function giveMeRandom (n) {
+    let arr = [];
+    for (let i = 0; i < n; i++) {
+      let rand = Math.floor(Math.random() * 11);
+      arr.push(rand);
+    }
+    return arr;
+  }
+  for (let numeri of arr) {
+    console.log(numeri > 5 &&  numeri <= 5);
+  } return arr
+}
+checkArray()
+console.log(checkArray);*/
 
 /* EXTRA 2
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
@@ -15,22 +32,73 @@
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const shoppingCart = [
+  {
+      price: 22,
+      name: 'maglia',
+      id: 'sweater',
+      quantity: 10
+  },
+  {
+      price: 50,
+      name: 'pantalone',
+      id: 'pant',
+      quantity: 11
+  },
+  {
+      price: 35,
+      name: 'camicia',
+      id: 'shirt',
+      quantity: 7
+  }
+]
+
+function shoppingCartTotal(shoppingCart){
+  let totale = 0;
+for (let i = 0; i < shoppingCart.length; i++){
+  totale += shoppingCart[i].price * shoppingCart[i].quantity;
+}
+return totale;
+}
+console.log(shoppingCartTotal(shoppingCart));
+
+
+
+
 /* EXTRA 3
- Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
- Crea una funzione chiamata "addToShoppingCart" che riceve un nuovo oggetto dello stesso tipo, lo aggiunge a "shoppingCart" e ritorna il nuovo numero totale degli elementi.
+ Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". 
+ Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
+ Crea una funzione chiamata "addToShoppingCart" che riceve un nuovo oggetto dello stesso tipo, 
+ lo aggiunge a "shoppingCart" e ritorna il nuovo numero totale degli elementi.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+function addToShoppingCart(shoppingCart) {
+  let obj = {
+    price: 15,
+    name: 'calzini',
+    id: 'socks',
+    quantity: 20
+  }
+  shoppingCart.push(obj);
+  return shoppingCartTotal;
+}
+addToShoppingCart(shoppingCart)
+console.log(shoppingCart);
+
 /* EXTRA 4
- Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
- Crea una funzione chiamata "maxShoppingCart" che riceve l'array "shoppingCart" e ritorna l'oggetto più costoso in esso contenuto.
+ Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". 
+ Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
+ Crea una funzione chiamata "maxShoppingCart" che riceve l'array "shoppingCart" e ritorna 
+ l'oggetto più costoso in esso contenuto.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* EXTRA 5
- Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
+ Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". 
+ Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
  Crea una funzione chiamata "latestShoppingCart" che riceve l'array "shoppingCart" e ritorna l'ultimo elemento.
 */
 
