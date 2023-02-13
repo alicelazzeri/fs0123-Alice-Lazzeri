@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    let obj = {
+      prop: 'prova',
+      objFiglio: {
+        objFiglio: {
+          valore: true
+        },
+        arrayFiglio: [
+          1,
+          2,
+          3,
+          {
+            primoNumero: 1,
+            secondoNumero: 2
+          }
+        ]
+      }
+    }
+
+// leggere una proprietà
+console.log(obj.prop);
+
+//sovrascrivere una proprietà 
+obj.prop = 'Prova2';
+
+//fare console log della prop alla riga 16
+console.log(obj.prop.objFiglio.objFiglio.valore);
+
+//fare console log del secondo valore dell'array 'arrayFiglio'
+console.log(obj.objFiglio.arrayFiglio[1]);
+
+//fare console log della prop secondoNumero
+console.log(obj.objFiglioarrayFiglio[3].secondoNumero);
+
+/*per leggere gli oggetti all'interno di console log si utilizza il punto a destra, 
+mentre quando si utilizzano le parentesi quadre a destra, a sinistra ci stiamo riferendo 
+ad un array*/
+
+//esempio di oggetto con sintassi anomala
+
+let objStrano = {
+  0: 'valore',
+  1: 'valore',
+  'due parole': 'ciao'
+}
+
+//lettura array
+
+let arr = [
+  1,
+  3,
+  6,
+  {
+    val1: 7,
+    val2: 10,
+  },
+  ['a', 'b', 'c', ['Hello', 'World']] // array multidimensionale, array di array
+];
+
+//leggere 6
+console.log(arr[2]);
+
+//leggere il 10
+console.log(arr[3].val2);
+
+//leggere l'8
+console.log(arr[3].valArr[1]);
+
+//leggere World
+console.log(arr[4][3][1]);
+
+// costruttore oggetti per costruire oggetti identici in cui cambiare i valori 
+
+function Pizza(_gusto,_prezzo) {
+  this.gusto = _gusto;
+  this.prezzo = _prezzo;
+}
+
+let diavola = new Pizza('Diavola', 1); //crea un nuovo libretto istruzioni con questi valori all'interno
+let margherita = new Pizza('Margherita', 5);
+console.log(diavola, margherita);
+
+  </script>
+</body>
+</html>
