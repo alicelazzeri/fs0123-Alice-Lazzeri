@@ -102,6 +102,29 @@
     restituisce un valore booleano se è un array, true se è un array, false se non lo */
 
 
+    let animali = ['gatto', 'airone', 'congilio', 'orso', 'giraffa', 'elefante'];
+    console.log(animali.length);
+    console.log(animali [animali.length - 1]);
+
+    animali.sort();
+    console.log(animali);
+
+    animali.reverse();
+    console.log(animali);
+
+    let num = [1, 110, 430, 5, 70];
+    num.sort(function(a,b) {
+      return a - b;
+    })
+
+    console.log(num);
+
+    num.sort(function(a,b) {
+      return b - a;
+    })
+
+    console.log(num);
+
   </script>
   
 </body>
