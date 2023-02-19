@@ -80,6 +80,14 @@
         console.log(now)
         
 
+        let oggi = new Date();
+
+
+        let ora = new Date(2023, 1, 14, 22, 03, 00, 00);
+        console.log(ora.toLocaleDateString('it-IT', {timezone: 'UTC'}));
+        console.log(ora.toLocaleTimeString('it-IT', {timezone: 'UTC'}));
+        console.log(ora.toLocaleTimeString('en-GB', {timezone: 'UTC'}));
+
     </script>
 </body>
 </html>
